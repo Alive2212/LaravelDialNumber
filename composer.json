@@ -1,0 +1,41 @@
+{
+    "name": "alive2212/laravel-dial-number",
+    "description": "This is complete data initialize service from phone number",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Babak Nodoust",
+            "email": "alive2212@yahoo.com",
+            "homepage": "http://babakn.com"
+        }
+    ],
+    "homepage": "https://github.com/alive2212/laraveldialnumber",
+    "keywords": ["Laravel", "LaravelDialNumber"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alive2212\\LaravelDialNumber\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alive2212\\LaravelDialNumber\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alive2212\\LaravelDialNumber\\LaravelDialNumberServiceProvider"
+            ],
+            "aliases": {
+                "LaravelDialNumber": "Alive2212\\LaravelDialNumber\\Facades\\LaravelDialNumber"
+            }
+        }
+    }
+}
