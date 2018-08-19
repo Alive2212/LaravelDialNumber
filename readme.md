@@ -12,10 +12,19 @@ This is where your description should go. Take a look at [contributing.md](contr
 Via Composer
 
 ``` bash
-$ composer require alive2212/laraveldialnumber
+$ composer require alive2212/laravel-dial-number
+```
+
+```bash
+$ php artisan vendor:publish --tag  laravel-dial-number.config
 ```
 
 ## Usage
+
+```php
+$dialNumber = new LaravelDialNumber();
+return $dialNumber->initWithPhoneNumber('+989127390191')->getRaw();
+```
 
 ## Change log
 
